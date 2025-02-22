@@ -86,7 +86,7 @@ bedtools sort -i BAIT_SEQUENCES_COORDINATES.bed > BAIT_SEQUENCES_COORDINATES_SOR
 
 ````
 - I had to do something extra, because the whole genome file of the Easton Ascaris paper contained mitochondrial reads... (either false assembly or NUMTs)
-- Using this you will get the updated probe bed and gap file 
+- Using this you will get the updated probe bed and gap file
 
 ### Probe binding and gap co-ordinates
 ```bash 
