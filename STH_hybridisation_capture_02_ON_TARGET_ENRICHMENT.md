@@ -47,7 +47,7 @@ cat $RESULT_FILE
 #####################################################################################################################
 
 ```
-### Code for on-target plot
+### Code for on-target % plot
 - Import them in R for plotting 
 - This will create the plot with the percentage mapping of CAPTURE and WGS datasets to the TARGETS 
 
@@ -487,7 +487,7 @@ median_stats_FOLD_ENRICHMENT_ONLY_ASCARIS <- UNIQUE_FOLD_ENRICHMENT %>%
 
 
 ```
-### Code for Figure 1 - on-target % mapping, absolute enrichment and fold-enrichment
+### Code for Figure 1 on paper - on-target % mapping, absolute enrichment and fold-enrichment
 - Bring all the plots together now to form Figure 1 
 
 ``` {r FIG1_ON_TARGET_ENRICHMENT_FOLD_ENRICHMENT , fig.path = './00_FIGURES/', warning = FALSE,message = FALSE}
