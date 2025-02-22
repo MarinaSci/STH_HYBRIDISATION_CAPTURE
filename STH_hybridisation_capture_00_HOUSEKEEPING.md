@@ -2,10 +2,8 @@
 Author: Marina Papaiakovou, mpapaiakovou[at]gmail.com 
 
 ## Contents: 
-- Collating metadata
 - Trimming of raw data(using trim-galore)
 - Counting reads
-- Gettting basic mapping stats with bedtools multicov
 
 ```bash 
 
@@ -87,17 +85,43 @@ for file in *.fq.gz; do zcat "$file" | echo $(($(wc -l)/4)); done > WGS_read_cou
 #the above will generate a list of read numbers for both R1 and R2. Because they are identical, 
 #manually remove the duplicates and import only the one
 
+########################
+###### FASTQC ---- #
+########################
+
+#!/bin/bash
+#SBATCH --partition=gpu
+#SBATCH --output=job_fastqc_%j_%a.out
+#SBATCH --error=job_fastqc_%j_%a.err
+#SBATCH --mem=2G
+#SBATCH --cpus-per-task=1
+#SBATCH --array=1-48
+
+#SCRIPT TO RUN FASTQC NOT ON A LOOP, BUT IN AN ARRAY
+
+export PATH=/home/marip3/miniconda3/bin/:$PATH
+source activate mapping-env
+
+#make a list of samples present before you run the script!
+#ls -1 *_trimmed_?.fq.gz > allfiles.txt
+#because each R1, R2 are separate files for fast qc
+
+SAMPLE=$(sed -n ${SLURM_ARRAY_TASK_ID}p allfiles.txt)
+
+echo "I will now run FASTQC"
+
+fastqc -o ./FASTQC -t 8  ${SAMPLE}
+#remember to have already created that directory
+
+echo "I AM DONE QC-ING!"
+
+04_fastqc_hpc.sh (END)
+
+
+
+
 #generate names of samples 
 ls -1 *_CIGAR_final_nosambamba_nosamclip.bam | cut -d'_' -f1,2 > CAPTURE_FILENAMES.txt
 ls -1 *_CIGAR_final_nosambamba_nosamclip.bam | cut -d'_' -f1,2 > WGS_FILENAMES.txt
-
-
-#get stats
-/home/marip3/mbl_genome_skimming/04.PROBE_BAIT/01.PROBE_CAPTURE_DATA/04.ANALYSIS/01.MTDNA_MAPPING
-/home/marip3/mbl_genome_skimming/04.PROBE_BAIT/02.SHOTGUN_PROBE_SAMPLES_DATA/04.ANALYSIS/01.MTDNA_MAPPING
-
-bedtools multicov -bams *filtered_CIGAR_final_nosambamba_nosamclip.bam -bed human_mito_ref.bed > ALL_CAPTURE_SAMPLES_BEDTOOLS_MULTICOV.txt
-bedtools multicov -bams *filtered_CIGAR_final_nosambamba_nosamclip.bam -bed human_mito_ref.bed > ALL_WGS_SAMPLES_BEDTOOLS_MULTICOV.txt
-
 
 ```
