@@ -1,9 +1,3 @@
----
-title: "STH_hybridisation_capture_03_PROBE_GAP_MITO_COVERAGE"
-author: "Marina Papaiakovou"
-date: "2025-02-22"
-output: html_document
----
 
 # Probe and gap coverage across the entir elength of mitochondrial genome of *Ascaris lumbricoides* and *Trichuris trichiura* 
 
