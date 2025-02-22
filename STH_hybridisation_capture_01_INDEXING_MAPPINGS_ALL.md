@@ -8,7 +8,7 @@ Author: Marina Papaiakovou, mpapaiakovou[at]gmail.com
 - human_mito_ref.bed, containing coordinates (start/end) of mitogenomes, was used to map both HYBRID CAPTURE AND WGS DATA TO TRIMMED READS 
 - Gettting basic mapping stats with bedtools multicov
 
-### Indexing mitochondrial genome reference
+### Index mitochondrial genome reference
 ```bash
 ########################################
 ## UPDATED SCRIPT FOR INDEXING MITO REF ----
