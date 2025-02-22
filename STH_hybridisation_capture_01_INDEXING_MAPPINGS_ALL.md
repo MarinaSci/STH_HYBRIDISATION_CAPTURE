@@ -270,4 +270,4 @@ bedtools multicov -bams *filtered_CIGAR_final_nosambamba_nosamclip.bam -bed huma
 
 ```
 - Ready for some plotting!!
-- Note that the mapping script here is simplified compared to the one int he global skim script. The sambamba and samclip filtering was not needed, filtering by duplicates and H/S was taking care of the funny CIGARs in the data
+- Note that the mapping script here is simplified compared to the one in the global skim script. The sambamba and samclip filtering was not needed, filtering by duplicates and H/S was taking care of the funny CIGARs in the data
