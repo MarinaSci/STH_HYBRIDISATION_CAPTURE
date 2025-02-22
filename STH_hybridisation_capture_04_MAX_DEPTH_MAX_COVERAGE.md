@@ -1,4 +1,4 @@
-# Max coverage  achieved with max gap (no probe designed for that region)
+# Relationship between gap size (between probes/baits) and normalised gap depth.
 *Ascaris lumbricoides* and *Trichuris trichiura* 
 
 - Purpose to figure out how much gap can be tolerated, whilst still having maximum depth, when you do not have probes for that area
