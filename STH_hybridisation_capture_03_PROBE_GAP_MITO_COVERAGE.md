@@ -123,7 +123,7 @@ bedtools subtract -a Ascaris_mito.bed -b BAIT_SEQUENCES_ASCARIS_MT_ONLY_COORDINA
 
 ```{r ALUM_MITOGENE_COORDINATES_PLOT, warning= FALSE, message = FALSE, fig.path='./00_FIGURES/'}
 
-png(filename = "00_FIGURES/ALUM_MITOGENE_COORDINATES_PLOT.png", height = 3, width = 8, units = "in", res = 300)
+png(filename = "00_FIGURES/ALUM_MITOGENE_COORDINATES_PLOT.png", height = 1, width = 8, units = "in", res = 300)
 
 library(tidyverse)
 ##################################
@@ -164,7 +164,7 @@ dev.off()
 
 ```{r TT_MITOGENE_COORDINATES_PLOT, warning=FALSE, fig.path='./00_FIGURES/'}
 
-png(filename = "00_FIGURES/TT_MITOGENE_COORDINATES_PLOT.png", height = 3, width = 8, units = "in", res = 300)
+png(filename = "00_FIGURES/TT_MITOGENE_COORDINATES_PLOT.png", height = 1, width = 8, units = "in", res = 300)
 
 TT_MITOGENE_COORDINATES_PLOT <- ggplot(TT_MITOGENE_COORDINATES) +
   geom_rect(aes(xmin = start, xmax = end, ymin = ymin, ymax = ymax), color = "lightgray", alpha = 0.4) +
@@ -361,7 +361,7 @@ Trichuris_capture_coverage_df_NO_ASCARIS <- Trichuris_capture_coverage_df %>%
 
 ```{r MERGED_COORDINATES_ASCARIS, warning=FALSE, fig.path='./00_FIGURES/'}
 
-png(filename = "00_FIGURES/MERGED_COORDINATES_ASCARIS.png", height = 3, width = 8, units = "in", res = 300)
+png(filename = "00_FIGURES/MERGED_COORDINATES_ASCARIS.png", height = 1, width = 8, units = "in", res = 300)
 
 
 #PLOTTING THE MERGED DATA
@@ -389,7 +389,7 @@ dev.off()
 
 ```{r MERGED_COORDINATES_TRICHURIS, warning=FALSE, fig.path='./00_FIGURES/', message=FALSE}
 
-png(filename = "00_FIGURES/MERGED_COORDINATES_TRICHURIS.png", height = 3, width = 8, units = "in", res = 300)
+png(filename = "00_FIGURES/MERGED_COORDINATES_TRICHURIS.png", height = 1, width = 8, units = "in", res = 300)
 
 
 MERGED_COORDINATES_TRICHURIS <- ggplot(Probe_merged_coordinates_filtered_mito_Trichuris) +
@@ -414,7 +414,7 @@ dev.off()
 
 ```{r PROBE_GAPS_ASCARIS, warning=FALSE, fig.path='./00_FIGURES/', message  = FALSE, warning=FALSE}
 
-png(filename = "00_FIGURES/PROBE_GAPS_ASCARIS.png", height = 3, width = 8, units = "in", res = 300)
+png(filename = "00_FIGURES/PROBE_GAPS_ASCARIS.png", height = 1, width = 8, units = "in", res = 300)
 
 ALUM_PROBE_GAPS <- read.table("/Users/marinapapaiakovou/Documents/00.Cambridge_PhD/02.Science/05.Hybridization_probe/00.Targets/ALUM_NEW_PROBE_GAP_COORDINATES.bed", sep = "\t", header = F) 
 colnames(ALUM_PROBE_GAPS) <- c('target', 'start', 'end')
@@ -447,7 +447,7 @@ dev.off()
 
 ```{r PROBE_GAPS_TRICHURIS, warning=FALSE, fig.path='./00_FIGURES/', message  = FALSE, warning=FALSE}
 
-png(filename = "00_FIGURES/PROBE_GAPS_TRICHURIS.png", height = 3, width = 8, units = "in", res = 300)
+png(filename = "00_FIGURES/PROBE_GAPS_TRICHURIS.png", height = 1, width = 8, units = "in", res = 300)
 
 TT_PROBE_GAPS <-read.table("/Users/marinapapaiakovou/Documents/00.Cambridge_PhD/02.Science/05.Hybridization_probe/00.Targets/TT_PROBE_GAP_COORDINATES.bed", sep = "\t", header = F) 
 colnames(TT_PROBE_GAPS) <- c('target', 'start', 'end')
