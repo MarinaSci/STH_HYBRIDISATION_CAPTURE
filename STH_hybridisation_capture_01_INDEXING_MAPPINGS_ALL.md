@@ -8,7 +8,7 @@ Author: Marina Papaiakovou, mpapaiakovou[at]gmail.com
 - human_mito_ref.bed, containing coordinates (start/end) of mitogenomes, was used to map both HYBRID CAPTURE AND WGS DATA TO TRIMMED READS 
 - Gettting basic mapping stats with bedtools multicov
 
-- Indexing mitochondrial genome reference
+Indexing mitochondrial genome reference
 ```bash
 ########################################
 ## UPDATED SCRIPT FOR INDEXING MITO REF ----
@@ -27,7 +27,7 @@ bwa index human_mito_ref.fasta
 #05_bwam_index_mito.sh (END)
 #######################################
 ```
-- Index reference with all baits/targets 
+### Index reference with all baits/targets 
 
 ```bash
 ##########################################################
@@ -50,7 +50,7 @@ echo "Done indexing"
 #05_bwa_index_bait_targets.sh (END)
 #######################################
 ```
-
+### HYBRIDISATION CAPTURE DATA
 - Script to map hybrid capture probe data to mitogenome reference 
 
 ```bash
@@ -116,6 +116,8 @@ echo "I am done"
 #06.bwa_mem_mito_simplified.sh
 ##################
 ```
+### HYBRIDISATION CAPTURE DATA
+
 - Script to map hybrid capture probe data to probe/bait reference 
 
 ```bash
@@ -151,6 +153,7 @@ echo "Done mapping!"
 
 ###################################################################################
 ```
+### WGS DATA
 - Now map the WGS data to the same refs are above
 - Indexing of the same references would not change here, so copy the fasta and indexed files to the WGS data 
 - Script to map WGS data to mito reference 
@@ -223,6 +226,7 @@ echo "I am done"
 #06.bwa_mem_mito_simplified.sh
 ########################################
 ```
+### WGS DATA
 - Script to map WGS data to probe/bait reference 
 
 ```bash
