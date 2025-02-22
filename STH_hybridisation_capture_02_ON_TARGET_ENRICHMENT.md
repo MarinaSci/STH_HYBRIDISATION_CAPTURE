@@ -47,6 +47,7 @@ cat $RESULT_FILE
 #####################################################################################################################
 
 ```
+### Code for on-target plot
 - Import them in R for plotting 
 - This will create the plot with the percentage mapping of CAPTURE and WGS datasets to the TARGETS 
 
@@ -166,7 +167,7 @@ summary_stats_Ascaris <- ALL_MAPPED_READS %>%
   mutate(range = max_value - min_value)
 
 ```
-
+### Code for absolute enrichment plot
 - This will create the plot with normalised absolute read counts at WGS and CAPTURE, per species and will connect the same sample id by a grey line 
 
 ```{r, warning = FALSE,message = FALSE}
@@ -366,7 +367,7 @@ median_stats_Ascaris <- CAPTURE_AND_WGS_MITO_DATA_ALUM_TT2 %>%
   
   
 ```
-
+### Code for fold-enrichment plot
 - This will create the plot with fold-enrichment at WGS and CAPTURE, per species 
 
 ```{r, warning = FALSE,message = FALSE}
@@ -486,7 +487,7 @@ median_stats_FOLD_ENRICHMENT_ONLY_ASCARIS <- UNIQUE_FOLD_ENRICHMENT %>%
 
 
 ```
-
+### Code for Figure 1 - on-target % mapping, absolute enrichment and fold-enrichment
 - Bring all the plots together now to form Figure 1 
 
 ``` {r FIG1_ON_TARGET_ENRICHMENT_FOLD_ENRICHMENT , fig.path = './00_FIGURES/', warning = FALSE,message = FALSE}
