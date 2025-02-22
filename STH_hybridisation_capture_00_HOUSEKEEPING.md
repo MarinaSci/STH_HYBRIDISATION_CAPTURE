@@ -115,10 +115,7 @@ fastqc -o ./FASTQC -t 8  ${SAMPLE}
 
 echo "I AM DONE QC-ING!"
 
-04_fastqc_hpc.sh (END)
-
-
-
+#04_fastqc_hpc.sh (END)
 
 #generate names of samples 
 ls -1 *_CIGAR_final_nosambamba_nosamclip.bam | cut -d'_' -f1,2 > CAPTURE_FILENAMES.txt
