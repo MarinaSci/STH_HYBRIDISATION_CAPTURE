@@ -1,6 +1,6 @@
 # Relationship between gap size (between probes/baits) and normalised gap depth.
 *Ascaris lumbricoides* and *Trichuris trichiura* 
-
+- Author: Marina Papaiakovou, mpapaiakovou[at]gmail.com 
 - Purpose to figure out how much gap can be tolerated, whilst still having maximum depth, when you do not have probes for that area
 - There is always going to be a distribution of fragments (smaller, and larger) so achieving high coverage in gaps is possible 
 - The below analysis was only conducted for Ascaris, as *Trichuris* did not really have any gaps in the design
