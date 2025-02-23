@@ -1,6 +1,6 @@
 
 # Probe and gap coverage across the entir elength of mitochondrial genome of *Ascaris lumbricoides* and *Trichuris trichiura* 
-
+- Author: Marina Papaiakovou, mpapaiakovou[at]gmail.com 
 - Mitochondrial gene order for both species
 - Coordinates were the probes/baits bind
 - Gaps were no probes were designed/hybridised 
