@@ -3,6 +3,7 @@
 - Percentage of total reads mapped to the probes (no filters) 
 - Absolute enrichment: counts of normalised reads (defined as reads mapped per million trimmed reads per Mb) and fold-enrichment 
 - Fold-enrichment: calculated as the ratio of normalised reads yielded by hybridisation capture divided by that yielded by WGS
+- (Figure 1 of BioRxiV MS)
 
 ## Contents: 
 
