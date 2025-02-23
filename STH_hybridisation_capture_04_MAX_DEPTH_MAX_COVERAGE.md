@@ -10,7 +10,7 @@
 
 - Bash code to calculate max depth in the gap coordinates
 - R code to transform the datasets
-- R code to plot the max normalised depth in relation to max gap
+- R code to plot the max normalised depth in relation to max gap (supplementary Figure 2 in Biorxiv MS)
 
 ### Calculate depth at the gap coordinates of *Ascaris* 
 
