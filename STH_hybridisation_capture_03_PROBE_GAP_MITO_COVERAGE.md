@@ -5,6 +5,7 @@
 - Coordinates were the probes/baits bind
 - Gaps were no probes were designed/hybridised 
 - Normalised depth, where '1' means even coverage across all bases 
+- (Figure 2 of BioRxiV MS)
 
 ## Contents: 
 
