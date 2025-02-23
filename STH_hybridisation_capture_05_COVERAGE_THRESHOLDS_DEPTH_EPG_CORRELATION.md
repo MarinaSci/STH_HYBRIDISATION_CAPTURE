@@ -1,5 +1,6 @@
 #  Comparison of mitochondrial coverage at >1x, >10 and >100x and relationship to parasite eggs per gram (EPG) in faecal samples for *Ascaris lumbricoides* and *Trichuris trichiura* 
 
+- Author: Marina Papaiakovou, mpapaiakovou[at]gmail.com 
 - Assessing the mitochondrial genome completeness at different depth thresholds 
 - Linking EPG (eggs per gram) to depth and running correlations 
 - Plotting both (Figure 3 of BioRxiV MS)
