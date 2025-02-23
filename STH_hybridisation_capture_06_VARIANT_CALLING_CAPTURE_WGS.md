@@ -1,4 +1,5 @@
 # Variant calling for hybrid capture and WGS data 
+- Author: Marina Papaiakovou, mpapaiakovou[at]gmail.com 
 - Variants were called using Bcftools mpileup, adding flag for orphan reads
 - Filtering varians for min/max alleles 
 - Filtering VCFs for depth 
