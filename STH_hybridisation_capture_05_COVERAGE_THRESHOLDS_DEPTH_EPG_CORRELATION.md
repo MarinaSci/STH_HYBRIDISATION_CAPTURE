@@ -435,7 +435,8 @@ dev.off()
 ![EGG_PLOT_STATS](00_FIGURES/EGG_PLOT_STATS.png)
 
 - Beautify on illustrator! 
-- Combine two plots (Figure 3 of submitted BiorXiv paer)
+- Combine two plots (Figure 3 of submitted BiorXiv paper)
+- I added the number of the min num of eggs (in the KK-positive samples) after
 
 ```{r COMBINED_THRESHOLDS_EPG_DEPTH_RELATIONSHIP, warning=FALSE,message= FALSE, fig.path='./00_FIGURES/'}
 
