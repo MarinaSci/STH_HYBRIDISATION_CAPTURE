@@ -690,6 +690,4 @@ dev.off()
 - I added the correlations on the plot on Illustrator
 - Solid grey line includes all frequencies, no filtering 
 - Dashed grey line has all the POS after I have excluded frequencies of 0s and 1s (which are the most of the datapoints)
-
-
 ```
